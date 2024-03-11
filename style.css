@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.container {
+  height: 100dvh;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.background {
+  background: url(img/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #404040;
+  padding: 3em;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 16px 25px 8px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 16px 25px 8px rgba(66, 68, 90, 1);
+  box-shadow: 0px 16px 25px 8px rgba(66, 68, 90, 1);
+  transition: all 0.3s;
+}
+.background:hover {
+  margin-top: -1em;
+  scale: 101%;
+}
+img {
+  width: 200px;
+  object-fit: cover;
+}
+.pl-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: auto 2em;
+}
+.red,
+.blue {
+  padding: 1.54em 0;
+  width: 10px;
+}
+.red {
+  background: red;
+}
+.blue {
+  background: blue;
+}
+.che,
+.mcu {
+  flex: 1;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background: #35024e;
+  padding: 0.4em 0;
+  color: white;
+}
+.score {
+  flex: 1;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #35024e;
+  background: #2ef498;
+  padding: 0.4em 0;
+}
+.pl-logo {
+  margin-bottom: -1.7em;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn {
+  border: 0;
+  margin-top: 1.5em;
+  padding: 0.7em 1.5em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 20px;
+  color: white;
+  background: #35024e;
+  border: solid 3px transparent;
+  transition: border 0.3s;
+}
+.btn-mcu:hover {
+  border: solid 3px red;
+}
+
+.btn-che:hover {
+  border: solid 3px blue;
+}

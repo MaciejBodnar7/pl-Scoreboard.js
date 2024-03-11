@@ -3,19 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Premier League Scoreboard.js</title>
   </head>
   <body>
-    <div>
-      <div class="pl-logo"></div>
-      <div class="pl-container">
-        <div class="red"></div>
-        <div class="mcu"></div>
-        <div class="score"><span>2</span>-<span></span>2</div>
-        <div class="che"></div>
-        <div class="blue"></div>
+    <div class="container">
+      <p>scoreboard that i worked too much on for no reason</p>
+      <div class="background">
+        <div class="pl-logo"><img src="img/Premier-League-Emblem.png" alt="" /></div>
+        <div class="pl-container">
+          <div class="red"></div>
+          <div class="mcu">MCU</div>
+          <div class="score"><span id="score-one">2</span> - <span id="score-two">2</span></div>
+          <div class="che">CHE</div>
+          <div class="blue"></div>
+        </div>
+        <div class="pl-timer"></div>
+        <div class="buttons">
+          <button class="btn btn-mcu">+1 to MCU</button>
+          <button class="btn btn-che">+1 to CHE</button>
+        </div>
       </div>
-      <div class="pl-timer"></div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
