@@ -24,12 +24,15 @@
           <div class="che">CHE</div>
           <div class="blue"></div>
         </div>
-        <div class="pl-timer"></div>
+        <div class="pl-timer" id="clock" onclick="startClock()">00:00</div>
         <div class="buttons">
-          <button class="btn btn-mcu">+1 to MCU</button>
-          <button class="btn btn-che">+1 to CHE</button>
+          <button class="btn btn-mcu" onclick="addMcu()">+1 to MCU</button>
+          <button class="btn btn-reset" onclick="reset()">reset</button>
+          <button class="btn btn-che" onclick="addChe()">+1 to CHE</button>
         </div>
       </div>
+      <p class="lastP">click on time box to start clock</p>
+      <p class="flexyp">and sorry but im not flexy</p>
     </div>
     <script src="index.js"></script>
   </body>

@@ -8,11 +8,13 @@ body {
 p {
   font-size: 1rem;
   font-weight: 600;
+  letter-spacing: 0.07em;
 }
 .container {
   height: 100dvh;
   width: 90%;
   max-width: 600px;
+  min-width: 600px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -21,18 +23,16 @@ p {
 }
 .background {
   background: url(img/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg) no-repeat;
-  background-size: cover;
+  background-size: 40em 24em;
   background-position: center;
   background-color: #404040;
-  padding: 3em;
+  padding: 2em;
   border-radius: 2rem;
   -webkit-box-shadow: 0px 16px 25px 8px rgba(66, 68, 90, 1);
   -moz-box-shadow: 0px 16px 25px 8px rgba(66, 68, 90, 1);
   box-shadow: 0px 16px 25px 8px rgba(66, 68, 90, 1);
-  transition: all 0.3s;
-}
-.background:hover {
-  margin-top: -1em;
+  transition: all 0.2s;
+  border: 5px solid white;
   scale: 101%;
 }
 img {
@@ -59,7 +59,7 @@ img {
 }
 .che,
 .mcu {
-  flex: 1;
+  width: 33%;
   font-size: 1.4rem;
   font-weight: 600;
   background: #35024e;
@@ -67,7 +67,7 @@ img {
   color: white;
 }
 .score {
-  flex: 1;
+  width: 33%;
   font-size: 1.4rem;
   font-weight: 600;
   color: #35024e;
@@ -80,7 +80,8 @@ img {
 .buttons {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2.5em;
 }
 .btn {
   border: 0;
@@ -93,6 +94,7 @@ img {
   background: #35024e;
   border: solid 3px transparent;
   transition: border 0.3s;
+  cursor: pointer;
 }
 .btn-mcu:hover {
   border: solid 3px red;
@@ -100,4 +102,31 @@ img {
 
 .btn-che:hover {
   border: solid 3px blue;
+}
+.btn-reset {
+  background-color: rgb(216, 69, 69);
+  border: solid 3px transparent;
+  transition: border 0.3s;
+}
+.btn-reset:hover {
+  border: solid white 3px;
+}
+.pl-timer {
+  color: #35024e;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 auto;
+  width: 148px;
+  padding: 0.4em;
+  background: white;
+  cursor: pointer;
+}
+.lastP {
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+.flexyp {
+  margin: 0;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
 }
